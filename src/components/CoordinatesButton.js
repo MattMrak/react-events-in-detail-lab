@@ -1,7 +1,7 @@
 // Code CoordinatesButton Component Here
 import React from 'react'
 
-export default class CoordinatesButton extends React.Component {
+class CoordinatesButton extends React.Component {
     handleClick = (event) => {
         this.props.onReceiveCoordinates([event.clientX, event.clientY]);
     };
@@ -9,3 +9,5 @@ export default class CoordinatesButton extends React.Component {
         return <button onClick={this.handleClick}>Coordinates</button>
     }
 }
+
+export default CoordinatesButton;
